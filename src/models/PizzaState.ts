@@ -1,7 +1,9 @@
 import { Category } from "./category";
+import { OrderState } from "./OrderState";
 
 export interface PizzaState {
     Categories: Category[],
-    addOrder: (payload: string) => void,
-    removeOrder: (id: number) => void
+    activeCategory: (id: string) => void;
+    addOrder: (payload: OrderState) => void,
+    removeOrder: (id: string) => void
 }
