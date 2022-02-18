@@ -1,15 +1,13 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import useStore from './store';
-import { Button, Container, Grid } from '@mui/material';
+import Layout from './components/Layout';
+import Header from './Parts/Header/Header';
 
 function App() {
 
   return (
-    <Container>
-
-    </Container>
+    <Layout>
+      <Header title='Categorias'/>
+    </Layout>
   );
 }
 
